@@ -2,8 +2,13 @@
     --main-color: #10cab7;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "work sans", sans-serif;
+    padding: 0px;
 }
 
 
@@ -124,6 +129,7 @@ a:hover {
     background-size: cover;
     position: relative;
     height: calc(100vb - 77.5px);
+    margin: 0;
 }
 
 .landing .title {
@@ -186,6 +192,8 @@ a:hover {
     font-size: 17px;
 }
 
+
+
 .services {
     margin-top: 100px;
     width: 100%;
@@ -219,14 +227,13 @@ a:hover {
     .s-header {
         font-size: 60px;
     }
-
 }
 
 .s-cont {
     padding-left: 10%;
     padding-right: 10%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     justify-content: center;
     margin-top: 100px;
@@ -305,7 +312,7 @@ a:hover {
     padding-right: 5%;
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 30px;
     justify-content: center;
     margin-bottom: 0;
@@ -389,7 +396,7 @@ hr {
 
 @media (max-width:600px) {
     .col-a:first-child {
-        font-size: 300px;
+        font-size: 280px;
         padding-right: 5%;
     }
 }
@@ -466,7 +473,7 @@ hr {
     }
 
     .cont-c p:last-child i {
-        padding-left: 5px;
+        padding-left: 3px;
 
     }
 }
@@ -496,6 +503,49 @@ hr {
 
 .cont-c p:last-child i:last-child:hover {
     color: #12cfcf;
+}
+
+@media (max-width:320px) {
+    .cont-p {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .feat h3 {
+        font-size: 20px;
+    }
+
+    .landing .title h1 {
+        font-size: 45px;
+    }
+
+    .landing .title p {
+        line-height: 1.6;
+        font-size: 17px;
+    }
+
+    .cont-a {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .s-cont {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .features .cont {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .cont-c h2 {
+        font-size: 18px;
+    }
+
+    .cont-c p:last-child {
+        padding-left: 23.5px;
+
+    }
 }
 
 /* ezz */
